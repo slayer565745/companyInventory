@@ -4,7 +4,7 @@ public class searching
 	{
 		public searching(Scanner userInput)
 			{
-				
+				System.out.println();
 			}
 
 	}

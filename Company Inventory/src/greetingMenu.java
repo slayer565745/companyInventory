@@ -5,7 +5,7 @@ public class greetingMenu
 		public static void main(String[] args)
 			{
 				greet();
-
+				//remove main 
 			}
 		public static void greet()
 		{

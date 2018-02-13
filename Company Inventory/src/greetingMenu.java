@@ -14,11 +14,12 @@ public class greetingMenu
 			int selection = userInput.nextInt();
 			if(selection == 1)
 				{
-					buyerMenu.methodName();
+					//buyerMenu.methodName();
+					//
 				}
 			else if (selection == 2)
 				{
-					employeeMenu.methodName();
+					employeeMenu.greetEmployee();
 				}
 			else
 				{

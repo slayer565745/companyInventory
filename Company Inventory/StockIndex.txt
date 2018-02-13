@@ -1,4 +1,10 @@
-a
-b
-c
-d
+1 Costco-Pizza 10 15
+2 iPhoneX 1000 2
+3 Goldfish 5 100
+4 Tire 100 3
+5 AlienWare 600 4
+6 Nvidia-TitanX 10000 3
+7 Subara-WRX 100000 1
+8 Toyota-Rav4 10 50
+9 Volvo-XC90 25000 1
+10 ImNotRacistAlbum-Signed 500 15

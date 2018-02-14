@@ -40,7 +40,6 @@ public class employeeMenu
 		}
 		public static void showExpenses()
 		{
-			
 		        if(employeeMenuChoice == 1)
 		        	{
 		        		showExpenses();

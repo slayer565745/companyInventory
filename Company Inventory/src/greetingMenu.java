@@ -14,8 +14,7 @@ public class greetingMenu
 			int selection = userInput.nextInt();
 			if(selection == 1)
 				{
-					//buyerMenu.methodName();
-					//
+					buyerMenu.mainBuyer();
 				}
 			else if (selection == 2)
 				{

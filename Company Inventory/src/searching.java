@@ -8,11 +8,11 @@ public class searching
 			{
 				int userChoice = 0;
 				ArrayList <Item> catagory = new ArrayList <Item>();
-				for(int n = 0; n < ArrayList.size(); n++)
+				for(int n = 0; n < stock.size(); n++)
 					{
-						if(ArrayList.get(n).getName().indexOf(ui) >= 0)
+						if(stock.get(n).getName().indexOf(ui) >= 0)
 							{
-								catagory.add(ArrayList.get(n));
+								catagory.add(stock.get(n));
 							}
 					}
 				System.out.println("Do you mean?");

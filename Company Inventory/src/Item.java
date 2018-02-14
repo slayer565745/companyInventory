@@ -1,5 +1,5 @@
 
-public class Data
+public class Item
 	{
 		String SKU;
 		String name;
@@ -7,7 +7,7 @@ public class Data
 		int wholeSaleCost;
 		
 		
-		public Data(String s, String n, int a, int w)
+		public Item(String s, String n, int a, int w)
 		{
 			SKU = s;
 			name = n;

@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 public class buyerMenu
 	{
-		public static ArrayList<Data> stock = new ArrayList<Data>();
+		public static ArrayList<Item> stock = new ArrayList<Item>();
 		public static void main(String[] args)
 			{
 				fillStock();
@@ -27,10 +27,33 @@ public class buyerMenu
 		}
 		public static void listInventory()
 		{
+			Scanner reply = new Scanner(System.in);
+			System.out.println("We currently have:");
+			System.out.println("--------------------");
 			for(int x=0; x<stock.size(); x++)
 				{
-					System.out.println(stock.get(x).getName());
+					System.out.println((x+1) + ") " + stock.get(x).getName() + " " + stock.get(x).getWholeSaleCost() + "$");
 				}
+			System.out.println("--------------------");
+			System.out.println("What would you like to buy?");
+			int buy = reply.nextInt() -1;
+			boolean runner = true;
+			int amount = 0;
+			while(runner)
+				{
+					Scanner replies = new Scanner(System.in);
+					System.out.println("How many would you like to buy?");
+					amount = replies.nextInt();
+					if(amount<=stock.get(buy).getAmount())
+						{
+							runner = false;
+						}
+					else
+						{
+							System.out.println("Sorry, we only have " + stock.get(buy).getAmount());
+						}
+				}
+			System.out.println("Congradulation on your purchase of " + amount + " " + stock.get(buy).getName() + "s!");
 		}
 		public static void fillStock()
 		{
@@ -66,7 +89,7 @@ public class buyerMenu
 										three = true;
 									}
 							}
-						stock.add(new Data(line.substring(0, x1), line.substring(x1+1, x2), Integer.parseInt(line.substring(x2+1, x3)), Integer.parseInt(line.substring(x3+1))));
+						stock.add(new Item(line.substring(0, x1), line.substring(x1+1, x2), Integer.parseInt(line.substring(x2+1, x3)), Integer.parseInt(line.substring(x3+1))));
 					}
 		            bufferedReader.close();
 				} 

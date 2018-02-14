@@ -45,7 +45,6 @@ public class buyerMenu
 						int x1 = 0;
 						int x2 = 0;
 						int x3 = 0;
-						int x4 = 0;
 						boolean one = false;
 						boolean two = false;
 						boolean three = false;

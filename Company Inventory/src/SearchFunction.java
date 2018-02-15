@@ -5,7 +5,7 @@ public class SearchFunction
 	{
 		public static void main(String[] args) throws IOException
 			{
-				
+				//if you want to use searching method, just copy those lines of codes
 				System.out.println("Please input the name you want");
 				Scanner userinput = new Scanner(System.in);
 				String ui = userinput.nextLine();

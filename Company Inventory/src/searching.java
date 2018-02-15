@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class searching
 	{
-		public searching(String ui)
+		public String searching(String ui)
 			{
 				int userChoice = 0;
 				ArrayList <Item> catagory = new ArrayList <Item>();
-				for(int n = 0; n < stock.size(); n++)
+				for(int n = 0; n < buyerMenu.stock.size(); n++)
 					{
-						if(stock.get(n).getName().indexOf(ui) >= 0)
+						if(buyerMenu.stock.get(n).getName().indexOf(ui) >= 0)
 							{
-								catagory.add(stock.get(n));
+								catagory.add(buyerMenu.stock.get(n));
 							}
 					}
 				System.out.println("Do you mean?");
@@ -31,6 +31,8 @@ public class searching
 						System.out.println("that is not an option");
 					}
 				String itemName = catagory.get(userChoice - 1).getName();
+				return itemName;
+				
 				
 			}
 

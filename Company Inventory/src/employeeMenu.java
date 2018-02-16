@@ -8,16 +8,13 @@ import java.util.*;
 public class employeeMenu
 	{
 		static int employeeMenuChoice;
+		static String newPassword;
+		static String password = "superhardpassword";
+	
 		
-		public static void main(String[] args)
-			{
-				//if selection == 2
-				ArrayList<String> cmds = new ArrayList<String>();
-				
-			}
 		public static void greetEmployee()
 		{
-			String password = "superhardpassword";
+			
 			Scanner c = new Scanner(System.in);
 			System.out.println("Please enter your password");
 			String passwordTry = c.nextLine();
@@ -28,6 +25,12 @@ public class employeeMenu
 					System.out.println("                     2) Show order history");
 					System.out.println("                     3) Change password");
 					employeeMenuChoice = userInput.nextInt();
+					if(employeeMenuChoice == 1)
+						showExpenses();
+					else if(employeeMenuChoice == 2)
+						showOrderHistory();
+					else
+						changePassword();
 				}
 			else
 				{
@@ -40,17 +43,27 @@ public class employeeMenu
 		}
 		public static void showExpenses()
 		{
-		        if(employeeMenuChoice == 1)
-		        	{
-		        		showExpenses();
-		        	}
+					System.out.println("Here are all of your expenses   ");
+		        		
+		        		//get method name from accounting module
+		        	
+        		
 		}
 		public static void showOrderHistory()
 		{
-			
+			System.out.println("Here is your employee order history");
+			//get method name from accounting module
 		}
 		public static void changePassword()
 		{
+			Scanner userInput = new Scanner(System.in);
+			if(employeeMenuChoice ==3)
+				{
 			
+			System.out.println("What would you like to change your password to?");
+			newPassword = userInput.nextLine();
+			password = newPassword;
+			System.out.println("Your password has been changed");
+				}
 		}
 }

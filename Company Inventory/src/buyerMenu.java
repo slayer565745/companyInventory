@@ -49,7 +49,7 @@ public class buyerMenu
 					else
 						run = false;
 				}
-			System.out.println("Congradulations on your purchase of " + amount + " " + stock.get(itemNum).getName());
+			System.out.println("Congratulations on your purchase of " + amount + " " + stock.get(itemNum).getName());
 		}
 		public static void fillStock()
 		{
